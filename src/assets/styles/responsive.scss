@@ -1,0 +1,57 @@
+@media only screen and (max-width: 992px) {
+	.layout {
+		&-default {
+			.layout-body {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.layout {
+		&-default {
+			.layout-content {
+				min-height: calc(100vh - 161px);
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	html {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	body {
+		height: 100%;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.layout {
+		&-default {
+			.layout-content {
+				min-height: calc(100vh - 161px);
+			}
+		}
+		&-wrapper {
+			height: -webkit-fill-available;
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.layout {
+		&-default {
+			.layout-wrapper {
+				&-inner {
+					max-height: 93vh;
+					max-width: 500px;
+					border-radius: 1.5rem;
+				}
+			}
+		}
+	}
+}

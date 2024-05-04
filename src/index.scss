@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+// @import '~bootstrap';
+@import "assets/styles/variables";
+
+@import "assets/styles/app.scss";
+@import "assets/styles/common";
+@import "assets/styles/responsive";
+@import "assets/styles/layout";
+
+$theme-colors: (
+	primary: #00468e,
+	secondary: #f06400,
+	danger: #ff4949,
+	warning: #e8a700,
+	success: #00c08c,
+	info: #26a8e0,
+);
+
+html,
+body {
+	margin: 0;
+	font-family: $font-primary, $font-secondary;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
